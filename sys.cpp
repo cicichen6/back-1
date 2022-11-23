@@ -2,7 +2,7 @@
 #include <string>
 #include <sstream>
 #include <set>
-#include <jsoncpp/json/json.h>
+//#include <jsoncpp/json/json.h>
 //#include <algorithm>
 
 using namespace std;
@@ -94,9 +94,9 @@ public:
       {
           return (itemToCompare.birthday == s.birthday);
       }*/
-      Json::Value root;
-	    Json::FastWriter fast_writer;
-      string str;// = fast_writer.write(root);
+  //    Json::Value root;
+	//  Json::FastWriter fast_writer;
+  //    string str;// = fast_writer.write(root);
       void add( set<zuifan >&, string, int, int) ;
       void cat(set<zuifan >&);
       void dele();
@@ -144,12 +144,13 @@ void ope::add(set<zuifan >& s, string name, int birth, int num){
     if (it.second == false) {      
              cout << "插入失败";
     }
-    root[ii]["num"] = num;
+    /*root[ii]["num"] = num;
     root[ii]["name"] = name;
     root[ii]["birth"] = birth;
     ii++;
     str = fast_writer.write(root);
-}
+*/
+ }
 
 void ope::cat(set<zuifan >& s){
     for(set<zuifan >::const_iterator  a = s.cbegin(); a != s.cend(); a ++){
@@ -163,7 +164,7 @@ void ope::dele(){
 }
           
 int main(){
-	  Json::FastWriter fast_writer;
+	//  Json::FastWriter fast_writer;
     set<zuifan > s;
     cout << "add zuifan's name and birthday and num";
     int num;
