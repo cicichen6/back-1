@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <set>
 #include <jsoncpp/json/json.h>
 //#include <algorithm>
@@ -12,6 +13,7 @@ public:
       int num;
       string name;
       int birthday;
+      mutable string criminalInString;
       zuifan(string name, int birthday,int num){
           this->name = name;
           this->birthday = birthday;
@@ -30,10 +32,16 @@ public:
        // return (d1.birthday == d2.birthday);}
       //friend class ope;
       //friend bool operator == (const zuifan&) const;
-      operator const char*() const
+      /*operator const char*() const
       {
           return name.c_str();
-      }
+      }*/
+       operator const char*() const{
+            ostringstream formattedCriminal;
+            formattedCriminal << name << "/" << birthday;
+             criminalInString = formattedCriminal.str();
+             return criminalInString.c_str();
+        }
       /*{
           return true;
           }
@@ -92,30 +100,42 @@ public:
       void add( set<zuifan >&, string, int, int) ;
       void cat(set<zuifan >&);
       void dele();
-     // void check(set<zuifan >, int);
-      void check(set<zuifan >, const int&);
+      void check(set<zuifan >, int);
+      //void check(set<zuifan >, const int&);
+      void revise(set<zuifan>&, const int);
 };
 
-/*void ope::check(set<zuifan > s, int id){
+void ope::revise(set<zuifan>& s, const int num){
+    auto iter = s.find(zuifan("",0,num));
+    if(iter != s.end()){
+        cout << "enter birth to revise:" ;
+       // int newBirth;
+        //cin >> (*iter).name;
+        cin >> const_cast<zuifan&>(*iter).birthday;
+    }
+}
+
+void ope::check(set<zuifan > s, int id){
      set<zuifan >::const_iterator iter = s.cbegin();
      for(int ii = 0; ii < id; ii++){
          iter++;
      }
-     cout << const_cast<zuifan&>(*iter).name;
-}*/
+     cout << (*iter).name;
+     //cout << const_cast<zuifan&>(*iter).name;
+}
 
-void ope::check(set<zuifan > s, const int& num){
+/*void ope::check(set<zuifan > s, const int& num){
   auto iContactFound = s.find(zuifan("",0,num ));
   if(iContactFound != s.end()){
     cout << "ok";
       }
   else {cout << "no";}
-  /*if(iContactFound != s.end()){
+  if(iContactFound != s.end()){
       cout << "ok";
   }
   else
-    cout << "no";*/
-}
+    cout << "no";
+}*/
 
 
 void ope::add(set<zuifan >& s, string name, int birth, int num){
