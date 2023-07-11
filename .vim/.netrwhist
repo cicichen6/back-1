@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/opt/svn/runoob01/db'
-let g:netrw_dirhist_2='/opt/svn/runoob01/conf'
-let g:netrw_dirhist_1='/opt'
