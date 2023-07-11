@@ -1,0 +1,3 @@
+/home/cici/mongodb/build/CMakeFiles/rebuild_cache.dir
+/home/cici/mongodb/build/CMakeFiles/edit_cache.dir
+/home/cici/mongodb/build/CMakeFiles/urtarget.dir

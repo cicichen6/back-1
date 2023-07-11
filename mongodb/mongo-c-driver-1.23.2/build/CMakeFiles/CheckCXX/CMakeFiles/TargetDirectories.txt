@@ -1,0 +1,2 @@
+/home/cici/mongodb/mongo-c-driver-1.23.2/build/CMakeFiles/CheckCXX/CMakeFiles/rebuild_cache.dir
+/home/cici/mongodb/mongo-c-driver-1.23.2/build/CMakeFiles/CheckCXX/CMakeFiles/edit_cache.dir

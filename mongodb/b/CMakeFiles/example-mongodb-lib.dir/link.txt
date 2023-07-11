@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexample-mongodb-lib.a  CMakeFiles/example-mongodb-lib.dir/db.cpp.o
+/usr/bin/ranlib libexample-mongodb-lib.a

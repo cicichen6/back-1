@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG  -rdynamic CMakeFiles/bson-streaming-reader.dir/examples/bson-streaming-reader.c.o  -o bson-streaming-reader  -Wl,-rpath,/home/cici/mongo-c-driver-1.23.2/cmkae-build/src/libbson libbson-1.0.so.0.0.0 

@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG  -rdynamic CMakeFiles/bulk4.dir/examples/bulk/bulk4.c.o  -o bulk4  -Wl,-rpath,/home/cici/mongo-c-driver-1.23.2/cmkae-build/src/libmongoc:/home/cici/mongo-c-driver-1.23.2/cmkae-build/src/libbson libmongoc-1.0.so.0.0.0 -lsasl2 -lssl -lcrypto -lrt -lresolv ../libbson/libbson-1.0.so.0.0.0 -pthread 

@@ -1,0 +1,4 @@
+/home/cici/mongodb/b/CMakeFiles/rebuild_cache.dir
+/home/cici/mongodb/b/CMakeFiles/edit_cache.dir
+/home/cici/mongodb/b/CMakeFiles/example-mongodb.dir
+/home/cici/mongodb/b/CMakeFiles/example-mongodb-lib.dir

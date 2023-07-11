@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/urtarget.dir/test03.cpp.o  -o urtarget   -L/usr/local/lib/mongocxx/v_noabi  -L/usr/local/lib/bsoncxx/v_noabi  -Wl,-rpath,/usr/local/lib/mongocxx/v_noabi:/usr/local/lib/bsoncxx/v_noabi:/usr/local/lib /usr/local/lib/libmongocxx.so.3.7.1 /usr/local/lib/libbsoncxx.so.3.7.1 
